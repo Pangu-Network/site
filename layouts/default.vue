@@ -3,13 +3,14 @@
         <header class="fixed w-full z-10" :class="{ 'skicy': scrollTop > 500 }">
             <MainHeader />
         </header>
-        <main class="pt-28" style="z-index:1">
+        <main class="pt-28 mmm" style="z-index:1">
             <slot />
         </main>
         <footer>
             <MainFooter />
         </footer>
     </div>
+    <el-backtop :right="30" :bottom="40" />
 </template>
 <script setup>
 const scrollTop = ref(0);

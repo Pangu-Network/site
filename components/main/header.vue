@@ -44,12 +44,14 @@ const jumpToHash = (id) => {
 
 <template>
     <div class="bg-[#111111] md:h-24 h-20 flex justify-between items-center">
-        <div class="flex items-center px-1 xl:ml-64 md:ml-16 ml-4">
-            <img src="/img/logo.png" alt="Logo" class="h-[42px]">
-        </div>
+        <NuxtLink to="/">
+            <div class="flex items-center px-1 2xl:ml-64 xl:ml-48 lg:ml-32 md:ml-16 ml-4">
+                <img src="/img/logo.png" alt="Logo" class="h-[42px]">
+            </div>
+        </NuxtLink>
 
         <!-- 导航菜单 -->
-        <nav class="hidden md:flex 2xl:mr-48 md:mr-16">
+        <nav class="hidden lg:flex">
             <template v-for="item in navigation" :key="item.name">
                 <div v-if="!!item.id" @click="jumpToHash(item.id)" class="hover:text-gray-300 hover:underline md:text-lg text-base flex items-center 2xl:px-6 xl:px-4 md:px-2 cursor-pointer">
                     {{ $t(item.name) }}
@@ -72,14 +74,14 @@ const jumpToHash = (id) => {
 
 
         <!-- 移动端菜单按钮 -->
-        <button @click="isOpen = !isOpen" class="md:hidden mr-4">
+        <button @click="isOpen = !isOpen" class="lg:hidden mr-4">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </button>
 
         <!-- 移动端菜单 -->
-        <div v-if="isOpen" class="absolute top-full left-0 w-full bg-[#111111] z-10 md:hidden">
+        <div v-if="isOpen" class="absolute top-full left-0 w-full bg-[#111111] z-10 lg:hidden">
             <template v-for="item in navigation" :key="item.name">
                 <div v-if="!!item.id" @click="jumpToHash(item.id)" class="text-base flex justify-center items-center py-2 border-b">
                     {{ $t(item.name) }}
