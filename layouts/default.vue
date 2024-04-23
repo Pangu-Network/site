@@ -3,7 +3,7 @@
         <header class="fixed w-full z-10" :class="{ 'skicy': scrollTop > 500 }">
             <MainHeader />
         </header>
-        <main class="pt-28">
+        <main class="pt-28" style="z-index:1">
             <slot />
         </main>
         <footer>

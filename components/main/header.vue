@@ -1,10 +1,19 @@
 <script setup>
+const { locale, locales, setLocale, t } = useI18n()
+const availableLocales = computed(() => {
+    return locales.value.filter(i => i.code !== locale.value)
+})
+// console.log(locale, locales)
+const onLanguageChange = (lang) => {
+    setLocale(lang);
+};
+
 const navigation = [
-  { name: 'How it works', href: '/' },
-  { name: 'Investors', href: '/'},
-  { name: 'Ecosystem', href: '/'},
-  { name: 'Docs', href: '/'},
-  { name: 'Axe Testnet Live', href: '/', ico: true}
+  { name: 'home.howItWorks', id: 'howItWorks' },
+  { name: 'home.investors', id: 'ourInvestors'},
+  { name: 'home.ecosystem', id: 'ecosystem'},
+  { name: 'home.docs', href: '/'},
+  { name: 'home.axeTestnetLive', href: '/', ico: true}
 ]
 
 const route = useRoute()
@@ -12,21 +21,55 @@ const isOpen = ref(false)
 
 const path = computed(() => route.fullPath)
 
+const jumpToHash = (id) => {
+    if (isOpen.value === true){
+        isOpen.value = false;
+    }
+    const dom = document.getElementById(id);
+    if (!dom){
+        return;
+    }
+    dom.scrollIntoView({behavior: "smooth", inline: "center"});
+    
+    let fn = () => {
+        if (window.scrollY === dom.offsetTop) {
+            window.scrollBy(0, 1)
+            window.removeEventListener('scroll', fn);
+        }
+    }
+    window.addEventListener('scroll', fn);
+}
+
 </script>
 
 <template>
-    <div class="bg-[#111111] h-24 flex justify-between items-center">
+    <div class="bg-[#111111] md:h-24 h-20 flex justify-between items-center">
         <div class="flex items-center px-1 xl:ml-64 md:ml-16 ml-4">
             <img src="/img/logo.png" alt="Logo" class="h-[42px]">
         </div>
 
         <!-- 导航菜单 -->
         <nav class="hidden md:flex 2xl:mr-48 md:mr-16">
-            <NuxtLink v-for="item in navigation" :key="item.name" :to="item.href" :class="['hover:text-gray-300 md:text-lg text-base flex items-center 2xl:px-6 xl:px-4 md:px-2', { 'active': path === item.href }]" :aria-current="path === item.href ? 'page' : undefined">
-                {{ item.name }}
-                <NuxtImg v-if="item.ico" class="w-11 inline-block ml-2" src="/img/beta.png"/>     
-            </NuxtLink>
+            <template v-for="item in navigation" :key="item.name">
+                <div v-if="!!item.id" @click="jumpToHash(item.id)" class="hover:text-gray-300 hover:underline md:text-lg text-base flex items-center 2xl:px-6 xl:px-4 md:px-2 cursor-pointer">
+                    {{ $t(item.name) }}
+                </div>
+                <NuxtLink v-else :to="item.href" :class="['hover:text-gray-300 md:text-lg text-base flex items-center 2xl:px-6 xl:px-4 md:px-2', { 'active': path === item.href }]" :aria-current="path === item.href ? 'page' : undefined">
+                    {{ $t(item.name) }}
+                    <NuxtImg v-if="item.ico" class="w-11 inline-block ml-2" src="/img/beta.png"/>     
+                </NuxtLink>
+            </template>
         </nav>
+
+        <el-dropdown @command="onLanguageChange">
+            <Icon name="gis:earth-euro-africa-o" size="20" class="mr-12 cursor-pointer hover:text-[#8affd4]"/>
+            <template #dropdown>
+                <el-dropdown-menu>
+                    <el-dropdown-item v-for="lol in locales" :key="lol.code" :command="lol.code" :disabled="locale === lol.code">{{ lol.name }}</el-dropdown-item>
+                </el-dropdown-menu>
+            </template>
+        </el-dropdown>
+
 
         <!-- 移动端菜单按钮 -->
         <button @click="isOpen = !isOpen" class="md:hidden mr-4">
@@ -37,10 +80,15 @@ const path = computed(() => route.fullPath)
 
         <!-- 移动端菜单 -->
         <div v-if="isOpen" class="absolute top-full left-0 w-full bg-[#111111] z-10 md:hidden">
-            <a href="#" class="block p-4 border-b border-white hover:bg-[#222222]">首页</a>
-            <a href="#" class="block p-4 border-b border-white hover:bg-[#222222]">产品</a>
-            <a href="#" class="block p-4 border-b border-white hover:bg-[#222222]">关于我们</a>
-            <a href="#" class="block p-4 hover:bg-blue-600">联系我们</a>
+            <template v-for="item in navigation" :key="item.name">
+                <div v-if="!!item.id" @click="jumpToHash(item.id)" class="text-base flex justify-center items-center py-2 border-b">
+                    {{ $t(item.name) }}
+                </div>
+                <NuxtLink v-else :to="item.href" :class="['text-base flex justify-center items-center py-2 border-b', { 'active': path === item.href }]" :aria-current="path === item.href ? 'page' : undefined">
+                    {{ $t(item.name) }}
+                    <NuxtImg v-if="item.ico" class="w-11 inline-block ml-2" src="/img/beta.png"/>     
+                </NuxtLink>
+            </template>
         </div>
     </div>
 </template>

@@ -1,17 +1,22 @@
 :root {
-  --color: #409eff;
+    --color: #409eff;
+    --el-color-primary: #8affd4 !important;
+    --el-color-primary-light-9: #24322b !important;
+    --el-bg-color-overlay: #24322b !important;
+    --el-border-color-light: #8affd4 !important;
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+    width: 8px;
+    height: 8px;
+    background: #24322b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e3e3e3;
-  border-radius: 20px;
+    background: #8affd4;
+    border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #cccccc;
+    background: #8affd4;
 }

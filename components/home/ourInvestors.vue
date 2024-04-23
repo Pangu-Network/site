@@ -1,9 +1,9 @@
 <template>
 	<div class="ovt">
-		<div class="m-auto w-[70%] pt-24">
+		<div class="m-auto md:w-[70%] w-[90%] md:pt-24 pt-20">
 			<div class="md:text-4xl text-2xl font-bold">Our Investors</div>
 		</div>
-        <section ref="contentRef" class="ovt-sup py-20">
+        <section ref="contentRef" class="ovt-sup md:pt-20 pt-10">
             <div ref="innerRef1" class="ovt-sup-inner" :style="{ transform: 'translateX(' + left1 + 'px)' }">
                 <div class="ovt-item flex items-center justify-center" v-for="i in 10" @mouseenter="activeNum = i" @mouseleave="activeNum = null">
                 	<NuxtImg v-show="activeNum === i" :src="`/img/home/icos/ico${i}_active.png`" />
@@ -57,7 +57,7 @@ const startCarousel = () => {
 </script>
 <style lang="scss" scoped>
 .ovt{
-    width: 100vw; overflow: hidden; 
+    width: calc(100vw - 10px); overflow: hidden; 
     .ovt-sup{
         display: flex; position: relative; white-space: nowrap; cursor: pointer;
         .ovt-sup-inner{

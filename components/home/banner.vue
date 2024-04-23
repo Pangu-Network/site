@@ -1,13 +1,13 @@
 <template>
-	<div class="relative grid md:grid-cols-2 grid-cols-1 gap-x-40 bg-contain bg-no-repeat bg-center overflow-hidden" style="background-image: url('/img/home/bnr-bg.png')">
-		<div class="flex flex-col items-end justify-center h-[694px] z-10">
+	<div class="relative grid md:grid-cols-2 grid-cols-1 md:gap-x-40 bg-contain bg-no-repeat bg-center overflow-hidden" style="background-image: url('/img/home/bnr-bg.png')">
+		<div class="flex flex-col md:items-end items-center justify-center md:h-[694px] z-10">
 			<div>
-				<div class="md:text-6xl text-4xl font-bold">Trust</div>
+				<div class="md:text-6xl text-4xl font-bold">{{ $t('home.trust') }}</div>
 				<div class="md:text-6xl text-4xl font-bold text-bor tracking-tighter mt-2">Collides with</div>
 				<div class="md:text-6xl text-4xl font-bold mt-2">Efficiency</div>
 				<div class="text-[#ccc] mt-8">Powering possibilities, seamlessly</div>
 
-				<button class="bnr-btn cursor-pointer mt-12 bg-cover bg-no-repeat bg-center text-black hover:text-slate-700 text-xl font-bold w-[349px] h-[82px]" style="background-image: url('/img/home/btn-ng.png')">Bridge to Pangu’s Axe</button>
+				<button class="bnr-btn cursor-pointer mt-12 mb-4 bg-cover bg-no-repeat bg-center text-black hover:text-slate-700 text-xl font-bold w-[349px] h-[82px]" style="background-image: url('/img/home/btn-ng.png')">Bridge to Pangu’s Axe</button>
 			</div>
 		</div>
 		<div class="flex flex-col justify-center z-10">

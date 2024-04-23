@@ -39,7 +39,8 @@ export default defineNuxtConfig({
         "@pinia/nuxt",
         "@pinia-plugin-persistedstate/nuxt",
         '@nuxtjs/tailwindcss',
-        'nuxt-icon'
+        'nuxt-icon',
+        '@nuxtjs/i18n'
     ],
     tiptap: {
         prefix: "Tiptap", //prefix for Tiptap imports, composables not included
@@ -80,4 +81,31 @@ export default defineNuxtConfig({
             },
         },
     },
+    i18n: {
+        lazy: true,
+        // 使用组件级别的翻译
+        vueI18nLoader: true,
+        // 设置翻译文件目录, 从项目根目录开始查找，通常来说是 locales
+        langDir: 'locales/',
+        // 设置翻译策略, 不同策略对应不同行为，如果我们希望在路由上添加翻译类型作为前缀，例如：/zh/home，可以使用 prefix_except_default
+        strategy: 'no_prefix',
+        // 默认语言
+        defaultLocale: 'en-US',
+        detectBrowserLanguage: false,
+        // 支持的翻译语言
+        locales: [
+            { code: "en-US", iso: 'en-US', name: "English(US)", file: "en-US.ts" },
+            { code: "zh-CN", iso: 'zh-Hans', name: "简体中文", file: "zh-CN.ts", }
+        ],
+        // 启用浏览器语言检测，以便在访问者第一次访问您的站点时自动将其重定向到首选语言环境。
+        // nuxt-i18n 会在 cookie 中添加一个用于存储当前语言环境的变量，当我们修改语言时，nuxt-i18n 会更新它
+        // detectBrowserLanguage: {
+        //     // 启动 cookie
+        //     useCookie: true,
+        //     // 用于存储当前语言环境的变量名
+        //     cookieKey: 'currentLang',
+        //     // (建议用于改进SEO) -仅检测站点根路径(/)上的浏览器区域设置。只有当使用策略而不是“no_prefix”时才有效。
+        //     redirectOn: 'root',
+        // }
+    }
 });
