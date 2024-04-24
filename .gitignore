@@ -3,7 +3,6 @@ node_modules
 .nuxt
 .nitro
 .cache
-.output
 .env
 dist
 .DS_Store
@@ -16,3 +15,4 @@ server/api/admin
 !server/api/admin/login.ts
 server/api/pay/
 server/api/app/
+panguRsa.pem
