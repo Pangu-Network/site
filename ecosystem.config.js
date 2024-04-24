@@ -4,8 +4,11 @@ module.exports = {
             name: 'Pangu-Network',
             port: '3002',
             exec_mode: 'cluster',
-            instances: '3',
-            script: './.output/server/index.mjs'
+            instances: 'max',
+            script: './.output/server/index.mjs',
+            autorestart: true,
+            watch: true,
+            max_memory_restart: '1G'
         }
     ]
 }
