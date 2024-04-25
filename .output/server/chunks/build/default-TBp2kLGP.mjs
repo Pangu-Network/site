@@ -7,7 +7,7 @@ import { e as useNamespace, f as isUndefined, h as useId, b as isBoolean, j as c
 import { TinyColor } from '@ctrl/tinycolor';
 import { useResizeObserver, useEventListener, onClickOutside, useThrottleFn, tryOnScopeDispose, isClient, unrefElement } from '@vueuse/core';
 import { placements, createPopper } from '@popperjs/core';
-import __nuxt_component_1$1 from './Icon-DnnAWa75.mjs';
+import __nuxt_component_1$1 from './Icon-Vy9zZDux.mjs';
 import { ssrRenderClass, ssrRenderComponent, ssrRenderStyle, ssrRenderSlot, ssrRenderAttrs, ssrRenderAttr, ssrRenderList, ssrInterpolate } from 'vue/server-renderer';
 import { p as publicAssetsURL } from '../routes/renderer.mjs';
 import './index-6rodBP2N.mjs';
@@ -27,7 +27,7 @@ import 'nprogress';
 import 'vue-bundle-renderer/runtime';
 import 'devalue';
 import '@unhead/ssr';
-import './index-U_5h8U7N.mjs';
+import './index-DN6rbRbU.mjs';
 import '@iconify/vue/dist/offline';
 import '@iconify/vue';
 
@@ -4004,7 +4004,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
     src: "/img/logo.png",
     class: "h-[42px]"
   }, null, _parent));
-  _push(`</div><div></div><div class="flex justify-end md:pb-14 pb-4" ">`);
+  _push(`</div><div></div><div class="flex items-center justify-end md:pb-14 pb-4">`);
   _push(ssrRenderComponent(_component_Icon, {
     name: "ri:twitter-x-line",
     size: "22",
@@ -4020,10 +4020,10 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
     size: "22",
     class: "text-slate-200 cursor-pointer mx-2 hover:text-white"
   }, null, _parent));
-  _push(ssrRenderComponent(_component_Icon, {
-    name: "file-icons:telegram",
-    size: "22",
-    class: "text-slate-200 cursor-pointer mx-2 hover:text-white"
+  _push(ssrRenderComponent(_component_NuxtImg, {
+    src: "/img/home/ico-bei.png",
+    class: "cursor-pointer opacity-90 hover:opacity-100",
+    style: { "width": "32px", "height": "32px", "margin-left": "3px" }
   }, null, _parent));
   _push(`</div></div><div class="border-t border-gray-800 py-8 text-sm"> \xA9 Copyleft 2024, No rights reserved </div></div></div>`);
 }
@@ -4070,4 +4070,4 @@ _sfc_main.setup = (props, ctx) => {
 const _default = /* @__PURE__ */ _export_sfc$1(_sfc_main, [["__scopeId", "data-v-f52adece"]]);
 
 export { _default as default };
-//# sourceMappingURL=default-CQ_xF8wX.mjs.map
+//# sourceMappingURL=default-TBp2kLGP.mjs.map

@@ -10,11 +10,11 @@
                 <NuxtImg src="/img/logo.png" class="h-[42px]" />
             </div>
             <div></div>
-            <div class="flex justify-end md:pb-14 pb-4"">
+            <div class="flex items-center justify-end md:pb-14 pb-4">
                 <Icon name="ri:twitter-x-line" size="22" class="text-slate-200 cursor-pointer mx-2 hover:text-white" />
                 <Icon name="simple-icons:discord" size="22" class="text-slate-200 cursor-pointer mx-2 hover:text-white" />
                 <Icon name="file-icons:telegram" size="22" class="text-slate-200 cursor-pointer mx-2 hover:text-white" />
-                <Icon name="file-icons:telegram" size="22" class="text-slate-200 cursor-pointer mx-2 hover:text-white" />
+                <NuxtImg src="/img/home/ico-bei.png" class="cursor-pointer opacity-90 hover:opacity-100" style="width:32px; height: 32px; margin-left: 3px;"/>
             </div>
         </div>
 

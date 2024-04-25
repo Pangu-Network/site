@@ -28,7 +28,7 @@ onMounted(() => {
   background: #ffffff;
   position: absolute;
   z-index: 999999999;
-  width: 100vw;
+  width: calc(100vw - 8px);
   height: 100vh;
   overflow: hidden;
   > .pageLoading {
