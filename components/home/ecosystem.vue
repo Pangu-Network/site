@@ -1,27 +1,27 @@
 <template>
 	<section class="m-auto md:w-[70%] w-[90%] md:pt-36 pt-20 md:pb-40 pb-14">
-		<div class="md:text-4xl text-2xl font-bold mb-4">Building Disney World On Chain Made Possible</div>
+		<div class="md:text-4xl text-2xl font-bold mb-4">Available tools</div>
 
        	<div class="mt-8 eco-item bottom-scroll-animation">
        		<div class="md:absolute w-44 h-44 ico flex items-center justify-center cursor-pointer transition-[transform] ease-in-out hover:-translate-y-2">
-       			<NuxtImg src="/img/home/eco-logo1.png" />
+       			<NuxtImg src="/img/home/eco-ico11.png" />
        		</div>
-   			<div class="text-2xl text-[#111111] font-bold md:ml-48 px-6 py-7 tit">Daydreams Reshape the New World</div>
+   			<div class="text-2xl text-[#111111] font-bold md:ml-48 px-6 py-7 tit">AI Creates Character Images</div>
    			<div class="con py-8 md:pr-12 md:ml-[89px] md:pl-32">
-   				<div class="text-2xl">DDream.LAND</div>
-   				<div class="text-[#cccccc] text-base mt-4">DDream.Land is a blockchain-powered platform that enables game creation from idea to reality through co-creation, connects original game creators with DLC/Mod creators for collaborative distribution, and supports game tokenization and profit sharing.</div>
+   				<div class="text-2xl">Avatar Studio</div>
+   				<div class="text-[#cccccc] text-base mt-4">Utilizing advanced AI Art technology, anyone can create high-quality, personalized characters without the need for complex drawing skills. This meets the needs of game design, digital art creation, or simply curiosity and the desire to create.</div>
    			</div>
        	</div>
 
        	<div class="mt-8 eco-item bottom-scroll-animation r">
        		<div class="md:absolute w-44 h-44 ico flex items-center justify-center cursor-pointer transition-[transform] ease-in-out hover:-translate-y-2">
-       			<NuxtImg src="/img/home/eco-logo2.png" />
+       			<NuxtImg src="/img/home/eco-ico22.png" />
        		</div>
-   			<div class="text-2xl text-[#111111] font-bold md:mr-48 px-6 py-7 tit md:text-right">The Era of Digital Symbiosis</div>
+   			<div class="text-2xl text-[#111111] font-bold md:mr-48 px-6 py-7 tit md:text-right">AI Creates Personalized Human Voices</div>
    			<div class="con py-8 md:pl-12 md:mr-[75px] md:pr-32">
    				<div class="flex items-center">
-   					<div class="text-2xl flex-1">Nuwa Labs</div>
-   					<div class="imgico flex items-center justify-center ml-4 cursor-pointer transition-[transform] hover:scale-105">
+   					<div class="text-2xl flex-1">Voice Studio</div>
+   					<!-- <div class="imgico flex items-center justify-center ml-4 cursor-pointer transition-[transform] hover:scale-105">
    						<NuxtImg src="/img/home/eco-ico1.png" />
    					</div>
    					<div class="imgico flex items-center justify-center ml-4 cursor-pointer transition-[transform] hover:scale-105">
@@ -32,23 +32,36 @@
    					</div>
    					<div class="imgico flex items-center justify-center ml-4 cursor-pointer transition-[transform] hover:scale-105">
    						<NuxtImg src="/img/home/eco-ico4.png" />
-   					</div>
+   					</div> -->
    				</div>
-   				<div class="text-[#cccccc] text-base mt-4">Nuwa Labs is building the abstraction layer of digital life technologies with the mission of enabling digital beings to thrive everywhere. To achieve such a mission, Nuwa Labs is launching 3 products: HomoDeus Protocol, Nuwa Creation Platform, role.ai, and Nuwa Game Engine.</div>
+   				<div class="text-[#cccccc] text-base mt-4">Sound has the ability to connect hearts and evoke emotions. Therefore, we are dedicated to providing an intuitive, user-friendly platform that enables everyone to effortlessly create, edit, and share customized AI voices. From realistic human voices to fantastical sound effects, your creativity will know no bounds.</div>
    			</div>
        	</div>
 
        	<div class="mt-12 eco-item bottom-scroll-animation">
        		<div class="md:absolute w-44 h-44 ico flex items-center justify-center cursor-pointer transition-[transform] ease-in-out hover:-translate-y-2">
-       			<NuxtImg src="/img/home/eco-logo1.png" />
+       			<NuxtImg src="/img/home/eco-ico33.png" />
        		</div>
-   			<div class="text-2xl text-[#111111] font-bold md:ml-48 px-6 py-7 tit">BTC to Solana, Seamlessly</div>
+   			<div class="text-2xl text-[#111111] font-bold md:ml-48 px-6 py-7 tit">AI Generates Game Storylines</div>
    			<div class="con py-8 md:pr-12 md:ml-[89px] md:pl-32">
-   				<div class="text-2xl">Axe</div>
-   				<div class="text-[#cccccc] text-base mt-4">Axe stands as the pioneering DeFi solution within the Pangu Network ecosystem, designed to revolutionize the seamless transfer of BTC liquidity onto the Solana blockchain. With its innovative architecture and robust infrastructure, Axe not only facilitates the smooth transition of assets but also fosters a vibrant ecosystem where users can explore new opportunities and harness the full potential of cross-chain interoperability.</div>
+   				<div class="text-2xl">Plot Studio</div>
+   				<div class="text-[#cccccc] text-base mt-4">An intuitive, easy-to-use tool that, with just simple commands or prompts, enables AI to provide unique story concepts, plot developments, and character designs. Unleash your creative potential. Bring more fascinating stories and gaming experiences to the world!</div>
    			</div>
        	</div>
 
+
+       	<div class="mt-16 md:text-4xl text-2xl font-bold mb-4">Engine</div>
+
+       	<div class="mt-8 eco-item bottom-scroll-animation">
+       		<div class="md:absolute w-44 h-44 ico flex items-center justify-center cursor-pointer transition-[transform] ease-in-out hover:-translate-y-2">
+       			<NuxtImg src="/img/home/eco-ico44.png" />
+       		</div>
+   			<div class="text-2xl text-[#111111] font-bold md:ml-48 px-6 py-7 tit">AI-Native Interactive Narrative Game Engine</div>
+   			<div class="con py-8 md:pr-12 md:ml-[89px] md:pl-32">
+   				<div class="text-2xl">FuHsi Saga Engine</div>
+   				<div class="text-[#cccccc] text-base mt-4">By deeply integrating AI technology, the FuHsi Saga Engine offers a user-friendly, intuitive platform that, leveraging the power of artificial intelligence, enables anyone to easily create and experience their unique games, and share this joy with the world. With the assistance of AI, games can dynamically adjust storylines and outcomes in real time based on player decisions and preferences, delivering an exclusive and unparalleled gaming experience to each player.</div>
+   			</div>
+       	</div>
        
 	</section>
 </template>

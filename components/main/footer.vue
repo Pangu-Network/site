@@ -6,8 +6,9 @@
   <div class="text-[#666666] bg-black pt-14">
     <div class="px-6 md:w-[70%] w-[90%] mx-auto">
         <div class="grid md:grid-cols-3 grid-cols-1">
-            <div class="md:pb-14 pb-4">
-                <NuxtImg src="/img/logo.png" class="h-[42px]" />
+            <div class="md:pb-14 pb-4 flex items-center">
+                <NuxtImg src="/img/logo-ico.png" class="h-[37px]" />
+                <NuxtImg src="/img/logo.png" class="h-[22px] ml-4" />
             </div>
             <div></div>
             <div class="flex items-center justify-end md:pb-14 pb-4">

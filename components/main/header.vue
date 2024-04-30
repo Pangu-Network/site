@@ -46,7 +46,7 @@ const jumpToHash = (id) => {
     <div class="bg-[#111111] md:h-24 h-20 flex justify-between items-center">
         <NuxtLink to="/">
             <div class="flex items-center px-1 2xl:ml-64 xl:ml-48 lg:ml-32 md:ml-16 ml-4">
-                <img src="/img/logo.png" alt="Logo" class="h-[42px]">
+                <NuxtImg src="/img/logo.png" alt="Logo" class="h-[28px]" />
             </div>
         </NuxtLink>
 

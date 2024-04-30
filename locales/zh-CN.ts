@@ -6,8 +6,8 @@ export default defineI18nLocale(async locale => {
             investors: '投资方',
             ecosystem: '生态系统',
             docs: '文档',
-            axeTestnetLive: 'Axe测试网络',
-            trust: '信任',
+            axeTestnetLive: 'Avatar Studio',
+            trust: 'FuHsi',
         }
     }
 })

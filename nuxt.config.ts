@@ -15,14 +15,14 @@ export default defineNuxtConfig({
             charset: "utf-8",
             viewport: "width=device-width, initial-scale=1.0",
             meta: [
-                { name: "description", content: "pangu" },
+                { name: "description", content: "fuhsi.ai" },
                 {
                     name: "keywords",
-                    content: "Pangu-Network",
+                    content: "fuhsi.ai",
                 },
             ],
             link: [
-                { rel: 'icon', type: 'image/jpg', href: '/favicon.jpg' },
+                { rel: 'icon', type: 'image/png', href: '/favicon.png' },
             ],
             noscript: [{ children: "JavaScript is required" }]
         }

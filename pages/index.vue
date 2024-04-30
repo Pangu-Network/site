@@ -12,7 +12,7 @@
 // 设置SEO
 useHead({
     titleTemplate: (productCategory: any) => {
-        const baseTitle = "pangu network";
+        const baseTitle = "fuhsi.ai";
         return `${baseTitle}${productCategory ? " - " + productCategory : ""}`;
     },
 });
