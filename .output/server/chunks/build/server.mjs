@@ -905,7 +905,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-CVG65RcQ.mjs').then((m) => m.default || m)
+    component: () => import('./index-B2upgyc_.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1403,8 +1403,8 @@ const revive_payload_server_aCd5kyANw0 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-Vy9zZDux.mjs').then((r) => r["default"] || r.default || r));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-COE-BJoJ.mjs').then((r) => r["default"] || r.default || r));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-ByfjiGhQ.mjs').then((r) => r["default"] || r.default || r));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-AvZE9vYZ.mjs').then((r) => r["default"] || r.default || r));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
@@ -5416,11 +5416,11 @@ const localeCodes = [
 ];
 const localeLoaders = {
   "en-US": [{ key: "../locales/en-US.ts", load: () => import(
-    './en-US-BLLlAlIQ.mjs'
+    './en-US-Bzd8RCgi.mjs'
     /* webpackChunkName: "locale__Users_fuwenmiao_2024_pangu_network_locales_en_US_ts" */
   ), cache: false }],
   "zh-CN": [{ key: "../locales/zh-CN.ts", load: () => import(
-    './zh-CN-LR7D1vSB.mjs'
+    './zh-CN-CW06970d.mjs'
     /* webpackChunkName: "locale__Users_fuwenmiao_2024_pangu_network_locales_zh_CN_ts" */
   ), cache: false }]
 };
@@ -12658,7 +12658,7 @@ _sfc_main$3.setup = (props, ctx) => {
 };
 const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-7f3407f7"]]);
 const layouts = {
-  default: () => import('./default-TBp2kLGP.mjs').then((m) => m.default || m)
+  default: () => import('./default-CRfNFbe6.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",

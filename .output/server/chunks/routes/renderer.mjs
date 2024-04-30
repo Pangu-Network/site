@@ -108,7 +108,7 @@ function createServerHead(options = {}) {
 
 const unheadPlugins = [];
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1.0"},{"charset":"utf-8"},{"name":"description","content":"pangu"},{"name":"keywords","content":"Pangu-Network"}],"link":[{"rel":"icon","type":"image/jpg","href":"/favicon.jpg"}],"style":[],"script":[],"noscript":[{"children":"JavaScript is required"}],"charset":"utf-8","viewport":"width=device-width, initial-scale=1.0"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1.0"},{"charset":"utf-8"},{"name":"description","content":"fuhsi.ai"},{"name":"keywords","content":"fuhsi.ai"}],"link":[{"rel":"icon","type":"image/png","href":"/favicon.png"}],"style":[],"script":[],"noscript":[{"children":"JavaScript is required"}],"charset":"utf-8","viewport":"width=device-width, initial-scale=1.0"};
 
 const appRootId = "__nuxt";
 
@@ -409,5 +409,5 @@ const renderer$1 = /*#__PURE__*/Object.freeze({
   default: renderer
 });
 
-export { baseURL as b, publicAssetsURL as p, renderer$1 as r };
+export { baseURL as b, renderer$1 as r };
 //# sourceMappingURL=renderer.mjs.map

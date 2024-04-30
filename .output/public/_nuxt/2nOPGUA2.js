@@ -1,1 +1,0 @@
-const s=async e=>({appName:"Pangu-Network",home:{howItWorks:"How it works",investors:"Investors",ecosystem:"Ecosystem",docs:"Docs",axeTestnetLive:"Axe Testnet Live",trust:"Trust"}});export{s as default};
