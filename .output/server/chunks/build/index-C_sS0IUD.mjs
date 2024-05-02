@@ -50,12 +50,12 @@ const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender
 const _sfc_main$2 = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
   const _component_NuxtImg = __nuxt_component_0$1;
-  _push(`<section${ssrRenderAttrs(mergeProps({ class: "m-auto 2xl:w-[70%] md:w-[80%] w-[90%] py-12 pt-24 overflow-hidden" }, _attrs))} data-v-d3f0fd89><div class="md:text-4xl text-2xl font-bold mb-8" data-v-d3f0fd89>${ssrInterpolate(_ctx.$t("home.howItWorks"))}</div><div class="bg-[#161616] md:p-20 p-4 grid md:grid-cols-3 grid-cols-1 md:gap-x-12 md:gap-y-24" data-v-d3f0fd89><div class="md:w-[23vw] w-full" data-v-d3f0fd89>`);
+  _push(`<section${ssrRenderAttrs(mergeProps({ class: "m-auto 2xl:w-[70%] md:w-[80%] w-[90%] py-12 pt-24 overflow-hidden" }, _attrs))} data-v-7b5fc820><div class="md:text-4xl text-2xl font-bold mb-8" data-v-7b5fc820>${ssrInterpolate(_ctx.$t("home.howItWorks"))}</div><div class="bg-[#161616] md:p-20 p-4 grid md:grid-cols-3 grid-cols-1 md:gap-x-12 md:gap-y-24" data-v-7b5fc820><div class="md:w-[23vw] w-full" data-v-7b5fc820>`);
   _push(ssrRenderComponent(_component_NuxtImg, {
     src: "/img/home/one.png",
     class: "w-8/12 h-auto bottom-scroll-animation"
   }, null, _parent));
-  _push(`</div><div class="flex flex-col justify-center sm:col-span-2 pr-6 right-scroll-animation" data-v-d3f0fd89><div class="wtit" data-v-d3f0fd89>Idea</div><div class="text-[#cccccc] text-base mt-6 md:mb-4 mb-8" data-v-d3f0fd89>Bring forth any creative idea that flashes through your mind. Whether a brief description or a set of keywords, they are the keys to unlock this magical journey. No technical background is needed\u2014just your imagination.</div></div><div class="flex flex-col justify-center sm:col-span-2 md:pl-12 left-scroll-animation" data-v-d3f0fd89><div class="wtit" data-v-d3f0fd89>AI Design</div><div class="text-[#cccccc] text-base mt-6 md:mb-4 mb-8" data-v-d3f0fd89>AI will suggest design elements such as the game&#39;s visual style, interface layout, and narrative interactions based on your creativity. AI will generate multiple design proposals for you to choose from or provide further feedback on, ensuring the final design meets your expectations precisely.</div></div>`);
+  _push(`</div><div class="flex flex-col justify-center sm:col-span-2 pr-6 right-scroll-animation" data-v-7b5fc820><div class="wtit" data-v-7b5fc820>Idea</div><div class="text-[#cccccc] text-base mt-6 md:mb-4 mb-8" data-v-7b5fc820>Bring forth any creative idea that flashes through your mind. Whether a brief description or a set of keywords, they are the keys to unlock this magical journey. No technical background is needed\u2014just your imagination.</div></div><div class="flex flex-col justify-center sm:col-span-2 md:pl-12 left-scroll-animation" data-v-7b5fc820><div class="wtit" data-v-7b5fc820>AI Design</div><div class="text-[#cccccc] text-base mt-6 md:mb-4 mb-8" data-v-7b5fc820>AI will suggest design elements such as the game&#39;s visual style, interface layout, and narrative interactions based on your creativity. AI will generate multiple design proposals for you to choose from or provide further feedback on, ensuring the final design meets your expectations precisely.</div></div>`);
   _push(ssrRenderComponent(_component_NuxtImg, {
     src: "/img/home/two.png",
     class: "md:w-[23vw] w-full h-auto bottom-scroll-animation"
@@ -64,7 +64,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
     src: "/img/home/three.png",
     class: "md:w-[23vw] w-full h-auto bottom-scroll-animation"
   }, null, _parent));
-  _push(`<div class="flex flex-col justify-center sm:col-span-2 pr-6 right-scroll-animation" data-v-d3f0fd89><div class="wtit" data-v-d3f0fd89>AI Dev</div><div class="text-[#cccccc] text-base mt-6 md:mb-4 mb-8" data-v-d3f0fd89>Once the design is confirmed, the AI development phase will commence. In this stage, artificial intelligence will take on the heavy lifting of coding, transforming the design concepts into actual game code.</div></div><div class="flex flex-col justify-center sm:col-span-2 md:pl-12 left-scroll-animation" data-v-d3f0fd89><div class="wtit" data-v-d3f0fd89>AI Iteration</div><div class="text-[#cccccc] text-base mt-6 md:mb-4 mb-8" data-v-d3f0fd89>After the first playable version of the game is completed, AI can use self-learning or your feedback to improve and optimize the game. Whether adjusting difficulty balance, enhancing user experience, or adding new content, AI can respond quickly, continuously elevating the quality of the game.</div></div>`);
+  _push(`<div class="flex flex-col justify-center sm:col-span-2 pr-6 right-scroll-animation" data-v-7b5fc820><div class="wtit" data-v-7b5fc820>AI Dev</div><div class="text-[#cccccc] text-base mt-6 md:mb-4 mb-8" data-v-7b5fc820>Once the design is confirmed, the AI development phase will commence. In this stage, artificial intelligence will take on the heavy lifting of coding, transforming the design concepts into actual game code.</div></div><div class="flex flex-col justify-center sm:col-span-2 md:pl-12 left-scroll-animation" data-v-7b5fc820><div class="wtit" data-v-7b5fc820>AI Iteration</div><div class="text-[#cccccc] text-base mt-6 md:mb-4 mb-8" data-v-7b5fc820>After the first playable version of the game is completed, AI can use self-learning or your feedback to improve and optimize the game. Whether adjusting difficulty balance, enhancing user experience, or adding new content, AI can respond quickly, continuously elevating the quality of the game.</div></div>`);
   _push(ssrRenderComponent(_component_NuxtImg, {
     src: "/img/home/four.png",
     class: "md:w-[23vw] w-full h-auto bottom-scroll-animation"
@@ -73,10 +73,10 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
     src: "/img/home/five.png",
     class: "md:w-[23vw] w-full h-auto bottom-scroll-animation"
   }, null, _parent));
-  _push(`<div class="flex flex-col justify-center sm:col-span-2 pr-6 right-scroll-animation" data-v-d3f0fd89><div class="wtit" data-v-d3f0fd89>AI Testing</div><div class="text-[#cccccc] text-base mt-6 md:mb-4 mb-8" data-v-d3f0fd89>During the AI testing phase, artificial intelligence will conduct comprehensive testing of the game. AI can simulate different gaming scenarios, locate and fix issues and bugs, ensuring game stability and fluidity.</div></div><div class="flex flex-col justify-center sm:col-span-2 md:pl-12 left-scroll-animation" data-v-d3f0fd89><div class="wtit" data-v-d3f0fd89>Game Delivery</div><div class="text-[#cccccc] text-base mt-6 md:mb-4 mb-8" data-v-d3f0fd89>Games that pass testing will be directly run on cloud platforms for players to experience or share. Moreover, AI can also provide subsequent updates and maintenance services as needed, ensuring a continuously optimized gaming experience.</div></div><div class="md:w-[23vw] w-full" data-v-d3f0fd89>`);
+  _push(`<div class="flex flex-col justify-center sm:col-span-2 pr-6 right-scroll-animation" data-v-7b5fc820><div class="wtit" data-v-7b5fc820>AI Testing</div><div class="text-[#cccccc] text-base mt-6 md:mb-4 mb-8" data-v-7b5fc820>During the AI testing phase, artificial intelligence will conduct comprehensive testing of the game. AI can simulate different gaming scenarios, locate and fix issues and bugs, ensuring game stability and fluidity.</div></div><div class="flex flex-col justify-center sm:col-span-2 md:pl-12 left-scroll-animation" data-v-7b5fc820><div class="wtit" data-v-7b5fc820>Game Delivery</div><div class="text-[#cccccc] text-base mt-6 md:mb-4 mb-8" data-v-7b5fc820>Games that pass testing will be directly run on cloud platforms for players to experience or share. Moreover, AI can also provide subsequent updates and maintenance services as needed, ensuring a continuously optimized gaming experience.</div></div><div class="md:w-[23vw] w-full" data-v-7b5fc820>`);
   _push(ssrRenderComponent(_component_NuxtImg, {
     src: "/img/home/six.png",
-    class: "w-8/12 h-auto bottom-scroll-animation"
+    class: "md:ml-4 w-7/12 h-auto bottom-scroll-animation"
   }, null, _parent));
   _push(`</div></div></section>`);
 }
@@ -86,7 +86,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/home/howItWorks.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$1], ["__scopeId", "data-v-d3f0fd89"]]);
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$1], ["__scopeId", "data-v-7b5fc820"]]);
 const _sfc_main$1 = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_NuxtImg = __nuxt_component_0$1;
@@ -137,4 +137,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=index-q40vpyP4.mjs.map
+//# sourceMappingURL=index-C_sS0IUD.mjs.map

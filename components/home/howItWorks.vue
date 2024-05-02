@@ -44,7 +44,7 @@
 				<div class="text-[#cccccc] text-base mt-6 md:mb-4 mb-8">Games that pass testing will be directly run on cloud platforms for players to experience or share. Moreover, AI can also provide subsequent updates and maintenance services as needed, ensuring a continuously optimized gaming experience.</div>
 			</div>
 			<div class="md:w-[23vw] w-full">
-				<NuxtImg src="/img/home/six.png" class="w-8/12 h-auto bottom-scroll-animation"/>
+				<NuxtImg src="/img/home/six.png" class="md:ml-4 w-7/12 h-auto bottom-scroll-animation"/>
 			</div>
 			
 		</div>
