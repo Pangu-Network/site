@@ -3,7 +3,7 @@ import { E as useNuxtApp } from './server.mjs';
 
 const inlineConfig = {
   "nuxt": {
-    "buildId": "babce776-a793-4c58-aee6-e15db9f55254"
+    "buildId": "a1d40703-e9ac-430a-838e-136cbd451334"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(inlineConfig);
@@ -44,4 +44,4 @@ function resolveIconName(name = "") {
 }
 
 export { resolveIconName as r, useAppConfig as u };
-//# sourceMappingURL=index-CSwnz-Yb.mjs.map
+//# sourceMappingURL=index-MgQqmqNk.mjs.map
