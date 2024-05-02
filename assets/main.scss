@@ -12,8 +12,7 @@
 }
 body {
   font-size: 16px;
-  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
-    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-family: "Sen", sans-serif;
   background: #111111;
 }
 #__nuxt {
@@ -193,4 +192,15 @@ a {
      -webkit-transform: translateY(-700px)rotate(500deg);
      transform: translateY(-700px)rotate(500deg)
     }
+}
+
+@font-face {
+    font-family: 'Sen', sans-serif;
+    font-weight: normal;
+    src: url('~assets/fonts/Sen-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    src: url('~assets/fonts/Sen-ExtraBold.ttf') format('truetype');
 }

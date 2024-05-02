@@ -9,10 +9,10 @@ const onLanguageChange = (lang) => {
 };
 
 const navigation = [
-  { name: 'home.howItWorks', id: 'howItWorks' },
-  { name: 'home.investors', id: 'ourInvestors'},
-  { name: 'home.ecosystem', id: 'ecosystem'},
-  { name: 'home.docs', href: '/'},
+  // { name: 'home.howItWorks', id: 'howItWorks' },
+  // { name: 'home.investors', id: 'ourInvestors'},
+  // { name: 'home.ecosystem', id: 'ecosystem'},
+  // { name: 'home.docs', href: '/'},
   { name: 'home.axeTestnetLive', href: '/', ico: true}
 ]
 
@@ -50,27 +50,29 @@ const jumpToHash = (id) => {
             </div>
         </NuxtLink>
 
-        <!-- 导航菜单 -->
-        <nav class="hidden lg:flex">
-            <template v-for="item in navigation" :key="item.name">
-                <div v-if="!!item.id" @click="jumpToHash(item.id)" class="hover:text-gray-300 hover:underline md:text-lg text-base flex items-center 2xl:px-6 xl:px-4 md:px-2 cursor-pointer">
-                    {{ $t(item.name) }}
-                </div>
-                <NuxtLink v-else :to="item.href" :class="['hover:text-gray-300 md:text-lg text-base flex items-center 2xl:px-6 xl:px-4 md:px-2', { 'active': path === item.href }]" :aria-current="path === item.href ? 'page' : undefined">
-                    {{ $t(item.name) }}
-                    <NuxtImg v-if="item.ico" class="w-11 inline-block ml-2" src="/img/beta.png"/>     
-                </NuxtLink>
-            </template>
-        </nav>
+        <div class="flex items-center">
+            <!-- 导航菜单 -->
+            <nav class="hidden lg:flex mr-4">
+                <template v-for="item in navigation" :key="item.name">
+                    <div v-if="!!item.id" @click="jumpToHash(item.id)" class="hover:text-gray-300 hover:underline md:text-lg text-base flex items-center 2xl:px-6 xl:px-4 md:px-2 cursor-pointer">
+                        {{ $t(item.name) }}
+                    </div>
+                    <NuxtLink v-else :to="item.href" :class="['hover:text-gray-300 md:text-lg text-base flex items-center 2xl:px-6 xl:px-4 md:px-2', { 'active': path === item.href }]" :aria-current="path === item.href ? 'page' : undefined">
+                        {{ $t(item.name) }}
+                        <NuxtImg v-if="item.ico" class="w-11 inline-block ml-2" src="/img/beta.png"/>     
+                    </NuxtLink>
+                </template>
+            </nav>
 
-        <el-dropdown @command="onLanguageChange">
-            <Icon name="gis:earth-euro-africa-o" size="20" class="mr-12 cursor-pointer hover:text-[#8affd4]"/>
-            <template #dropdown>
-                <el-dropdown-menu>
-                    <el-dropdown-item v-for="lol in locales" :key="lol.code" :command="lol.code" :disabled="locale === lol.code">{{ lol.name }}</el-dropdown-item>
-                </el-dropdown-menu>
-            </template>
-        </el-dropdown>
+            <el-dropdown @command="onLanguageChange">
+                <Icon name="gis:earth-euro-africa-o" size="20" class="md:mr-36 mr-12 cursor-pointer hover:text-[#8affd4]"/>
+                <template #dropdown>
+                    <el-dropdown-menu>
+                        <el-dropdown-item v-for="lol in locales" :key="lol.code" :command="lol.code" :disabled="locale === lol.code">{{ lol.name }}</el-dropdown-item>
+                    </el-dropdown-menu>
+                </template>
+            </el-dropdown>
+        </div>
 
 
         <!-- 移动端菜单按钮 -->

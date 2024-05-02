@@ -2,7 +2,7 @@
     <section>
         <HomeBanner/>
         <HomeHowItWorks id="howItWorks"/>
-        <HomeOurInvestors id="ourInvestors"/>
+        <!-- <HomeOurInvestors id="ourInvestors"/> -->
         <HomeEcosystem id="ecosystem"/>
     </section>
 </template>

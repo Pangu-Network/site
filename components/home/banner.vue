@@ -1,17 +1,20 @@
 <template>
-	<div class="relative grid md:grid-cols-2 grid-cols-1 md:gap-x-40 bg-contain bg-no-repeat bg-center overflow-hidden" style="background-image: url('/img/home/bnr-bg.png')">
+	<div class="relative grid md:grid-cols-2 grid-cols-1 md:gap-x-40 bg-contain bg-no-repeat bg-center overflow-hidden" style="background-image: url('/img/home/bnr-bgw.png')">
 		<div class="flex flex-col md:items-end items-center justify-center md:h-[694px] z-10">
 			<div>
 				<div class="md:text-6xl text-4xl font-bold">{{ $t('home.trust') }}</div>
-				<div class="md:text-6xl text-4xl font-bold text-bor tracking-tighter mt-2">idea to game</div>
+				<div class="md:text-6xl text-4xl tracking-tighter my-4">idea to game</div>
+				<!-- <div class="md:text-6xl text-4xl font-bold text-bor tracking-tighter mt-2">idea to game</div> -->
 				<div class="md:text-6xl text-4xl font-bold mt-2">Made possible</div>
 				<div class="text-[#ccc] mt-8">Create your own customized game</div>
 
-				<button class="bnr-btn cursor-pointer mt-12 mb-4 bg-cover bg-no-repeat bg-center text-black hover:text-slate-700 text-xl font-bold w-[349px] h-[82px]" style="background-image: url('/img/home/btn-ng.png')">Start Building</button>
+				<button class="bnr-btn cursor-pointer mt-12 mb-4 bg-cover bg-no-repeat bg-center text-black hover:text-slate-700 text-xl font-bold w-[349px] h-[82px]" style="background-image: url('/img/home/btn-ngw.png')">Start Building</button>
 			</div>
 		</div>
 		<div class="flex flex-col justify-center z-10">
-			<div class="flex">
+			<NuxtImg src="/img/home/bnr-coinnew.png" class="w-[341px] h-auto coin1 md:ml-12"/>
+
+			<!-- <div class="flex">
 				<div>
 					<NuxtImg src="/img/home/bnr-coin1.png" class="w-[233px] h-auto coin1"/>
 				</div>
@@ -26,7 +29,7 @@
 				<div class="ml-28">
 					<NuxtImg src="/img/home/bnr-coin4.png" class="w-[178px] h-auto coin4"/>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<div class="lines">
 			<div v-for="i in 8"></div>
@@ -47,10 +50,10 @@
 		}
 	}
 	&:before{
-		content: ""; position: absolute; left: 0; bottom: 0; display: block; width: 18px; height: 18px; background-color: rgba(138, 255, 212, 1); transition: transform 300ms; transform: translate(-4px, 4px);
+		content: ""; position: absolute; left: 0; bottom: 0; display: block; width: 18px; height: 18px; background-color: #fff; transition: transform 300ms; transform: translate(-4px, 4px);
 	}
 	&:after{
-		content: ""; position: absolute; right: 0; top: 0; display: block; width: 18px; height: 18px; background-color: rgba(138, 255, 212, 1); transition: transform 300ms; transform: translate(4px, -4px);
+		content: ""; position: absolute; right: 0; top: 0; display: block; width: 18px; height: 18px; background-color: #fff; transition: transform 300ms; transform: translate(4px, -4px);
 	}
 }
 
@@ -93,7 +96,7 @@
 .lines{
 	&>div{
 		position: absolute; display: block; z-index: 0;
-	  	background-image: linear-gradient(to bottom, rgba(0, 224, 161, 1), rgba(0, 224, 161, 0));
+	  	background-image: linear-gradient(to bottom, #fff, rgba(0, 224, 161, 0));
 	  	animation: raindrop 3s linear infinite; width: 1px;
 
 		&:nth-child(1) {

@@ -1,5 +1,5 @@
 <template>
-    <div class="gd-container font-mono">
+    <div class="gd-container">
         <header class="fixed w-full z-10" :class="{ 'skicy': scrollTop > 500 }">
             <MainHeader />
         </header>

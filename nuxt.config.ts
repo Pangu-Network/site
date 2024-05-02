@@ -107,5 +107,13 @@ export default defineNuxtConfig({
         //     // (建议用于改进SEO) -仅检测站点根路径(/)上的浏览器区域设置。只有当使用策略而不是“no_prefix”时才有效。
         //     redirectOn: 'root',
         // }
+    },
+    build: {
+        loaders: {
+            fontUrl: {
+                limit: 10000,
+                types: ['ttf', 'woff', 'woff2'],
+            }
+        },
     }
 });
